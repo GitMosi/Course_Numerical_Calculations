@@ -1,4 +1,4 @@
-# Course_Numerical_Calculations
+# Course Numerical Calculations
 
 Collection of various C++ projects completed during coursework at K.N.T University of Technology and personal programming exercises.
 
