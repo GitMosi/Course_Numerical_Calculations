@@ -6,4 +6,4 @@ Collection of various C++ projects completed during coursework at K.N.T Universi
 - [Course: Numerical Calculations]
   * Superviser: Fatemeh S. Rasouli
   * University: K.N.T University of Technology
-  * Semester: Spring/2019
+  * Semester: Winter/2019
