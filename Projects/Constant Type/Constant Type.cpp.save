@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	const double NUMBER= 1;
+    /* const double NUMBER= 1; OR #def
+
+
+	cout << NUMBER;
+
+return 0;
+}

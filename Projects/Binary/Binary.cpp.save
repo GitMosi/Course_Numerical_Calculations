@@ -1,0 +1,14 @@
+#include<iostram>
+
+using namespace std;
+
+int main ()
+{
+
+short int a,b;
+a=65535;
+b=a+2;
+cout<<b<<endl;
+
+return 0;
+}

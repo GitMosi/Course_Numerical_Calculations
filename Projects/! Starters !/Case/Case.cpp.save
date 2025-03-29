@@ -1,0 +1,26 @@
+#include<iostream>
+
+using namespace std;
+
+int main ()
+{
+
+int a;
+cout<<"\t"<<"Please inter a number!"<<endl;
+cin>>a;
+
+switch(a)
+{
+case 1:
+    cout<<"You won a knife."<<endl;
+    break;
+case 2:
+    cout<<"\t""You won a gun."<<endl;
+    break;
+default:
+    cout<<"\t"<<"You won a biah!"<<endl;
+    break;
+}
+
+return 0;
+}
