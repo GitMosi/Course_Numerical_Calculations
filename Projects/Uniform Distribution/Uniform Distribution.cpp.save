@@ -1,0 +1,26 @@
+#include<iostream>
+#include<fstream>
+#include<stdlib.h>
+
+
+using namespace std;
+
+int main()
+{
+
+ofstream myfile;
+myfile.open("Random.txt");
+double x;
+srand()*;
+for (int i=0; i<=100; i++)
+{
+x=rand();
+x=((double)rand()/RAND_MAX);
+cout<<x<<endl;
+cout<<RAND_MAX<<endl;
+myfile<<x<<endl;
+}
+
+myfile.close();
+return 0;
+}

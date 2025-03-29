@@ -1,0 +1,32 @@
+#include<iostream>
+#include<fstream>
+#include<cmath>
+#include<math.h>
+#include<stdlib.h>
+#include<time.h>
+
+
+using namespace std;
+
+int main ()
+{
+
+ofstream myfile;
+myfile.open("Random.txt");
+
+double x,y,s;
+srand(time(0));
+cin>>s;
+
+for(int i=0; i<=100; i++)
+{
+x=rand();
+x=((double)rand()/RAND_MAX);
+y=-((1/s)*log(1-s*x));
+cout<<x<<"\t";
+}
+
+myfile.close();
+
+return 0;
+}

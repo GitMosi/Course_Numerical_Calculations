@@ -1,0 +1,26 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+
+double sum,sum_2,a,b,n,h,f,x_a,;
+cin>>a>>b>>n;
+h=(b-a)/n;
+sum=0;
+x_a=pow(a,3);
+x_b=pow(b,3);
+
+for(int i=0; i<n; i++)
+{
+x=a+(i*h);
+f=pow(x,3);
+sum=sum+(f*h);
+}
+sum_2=sum+x_a+x_b
+
+
+return 0;
+}

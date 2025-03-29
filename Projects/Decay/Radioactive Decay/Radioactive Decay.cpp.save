@@ -1,0 +1,41 @@
+#include<iostream>
+#include<fstream>
+#include<cmath>
+#include<math.h>
+#include<time.h>
+#include<stdlib.h>
+
+
+
+using namespace std;
+
+int main()
+{
+
+//ofstream myfile;
+//myfile.open("Random.txt")
+
+int N,N0,deltaN;
+double x,landa;
+srand(time(0));
+N=N0;
+cin>>N0;
+cin>>landa;
+
+
+for(int t=0; t<=100; t++)
+{
+    deltaN=0;
+    for(int i=1; i<=N; i++)
+    {
+        x=((double)rand()/RAND_MAX);
+        if(x<=landa)
+        {
+        deltaN=deltaN+1;
+        N=N-1;
+        cout<<t<<"\t"<<N<<endl;
+        }
+    }
+}
+return 0;
+}

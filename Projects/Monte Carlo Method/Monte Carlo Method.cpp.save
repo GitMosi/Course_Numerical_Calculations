@@ -1,0 +1,32 @@
+#include<iostream>
+#include<cmath>
+#include<stdlib.h>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+double A,N,a,b,f,n,h,Np,Ns,pi,x,y;
+
+cin>>N;
+A=4
+
+
+for (int i=0; i<N; i++)
+{
+x=((double)rand()/RAND_MAX);
+y=((double)rand()/RAND_MAX);
+f=sqrt(pow(x,2)+pow(y,2));
+if (f<=1) Np=Np+1;
+else Ns=Ns+1;
+
+}
+pi=(Np/N)*A;
+cout<<pi<<endl;
+cout<<Np<<endl;
+cout<<Ns<<endl;
+
+
+return 0;
+}

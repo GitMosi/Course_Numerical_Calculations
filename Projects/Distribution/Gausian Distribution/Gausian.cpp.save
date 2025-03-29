@@ -1,0 +1,39 @@
+#include<iostream>
+#include<fstream>
+#include<stdlib.h>
+#include<time.h>
+#include<cmath>
+#include<math.h>
+
+
+using namespace std;
+
+int main()
+{
+
+ofstream myfile;
+myfile.open("Random.txt");
+double x_1,x_2,y_1,y_2,sikma;
+srand((time(0)));
+cin>>sikma;
+for (int i=0; i<=100; i++)
+{
+x_1=rand();
+x_2=rand();
+x_1=((double)rand()/RAND_MAX);
+x_2=((double)rand()/RAND_MAX);
+cout<<x_1<<endl;
+cout<<log(x_1)<<endl;
+y_1=sqrt(-2*sikma*log(x_1))*cos(2*3.1415*x_2);
+y_2=sqrt(-2*sikma*log(x_2))*cos(2*3.1415*x_1);
+cout<<(sqrt(2*sikma*log(x_2)))<<"\t"<<(sqrt(2*sikma*log(x_1)))<<endl;
+//cout<<"x_1: "<<x_1<<"\t"<<"y_1: "<<y_1<<endl;
+//cout<<"x_2: "<<x_2<<"\t"<<"y_2: "<<y_1<<endl;
+myfile<<x_1<<"\t"<<y_1<<"\t"<<x_2<<"\t"<<y_2<<endl;
+}
+
+cout<<RAND_MAX<<endl;
+
+myfile.close();
+return 0;
+}
